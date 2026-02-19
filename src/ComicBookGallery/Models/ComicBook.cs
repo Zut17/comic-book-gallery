@@ -18,17 +18,18 @@ namespace ComicBookGallery.Models
         {
             get
             {
-                return SeriesTitle + " #" + IssueNumber; 
+                return SeriesTitle + " #" + IssueNumber;
             }
         }
-        //series-title-issuenumber.jpg
+
+        // series-title-issuenumber.jpg
         public string CoverImageFileName
         {
             get
             {
-                return SeriesTitle.Replace(" ", "-").ToLower() + "-" + IssueNumber + ".jpg";
+                return SeriesTitle.Replace(" ", "-")
+                    .ToLower() + "-" + IssueNumber + ".jpg";
             }
         }
-
     }
 }
